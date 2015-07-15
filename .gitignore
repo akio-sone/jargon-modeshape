@@ -12,6 +12,7 @@ ConnectorVersion.java
 .settings/
 target/
 irods-connector/irods
+jargon-modeshape-webdav/nb-configuration.xml
 
 *.pydevproject
 .metadata

@@ -87,11 +87,11 @@
              implements the RequestResolver interface and has a public, no-arg constructor.
              If no value is provided, o.m.w.j.webdav.MultiRepositoryRequestResolver will be used.
          -->
-    <context-param>
-        <param-name>org.modeshape.web.jcr.webdav.REQUEST_RESOLVER_CLASS_NAME</param-name>
+<!--    <context-param>
+        <param-name>org.modeshape.web.jcr.webdav.REQUEST_RESOLVER_CLASS_NAME</param-name>-->
         <!-- <param-value>org.modeshape.web.jcr.webdav.MultiRepositoryRequestResolver</param-value>-->
-       <param-value>org.modeshape.web.jcr.webdav.SingleRepositoryRequestResolver</param-value>
-    </context-param>
+<!--       <param-value>org.modeshape.web.jcr.webdav.SingleRepositoryRequestResolver</param-value>
+    </context-param>-->
 
     <!--
              This parameter is required if (and only if) the SingleRepositoryRequestResolver is used.
@@ -99,7 +99,7 @@
              will be thrown if no value is provided for this parameter.
          -->
    
-    <context-param>
+<!--    <context-param>
         <param-name>org.modeshape.web.jcr.webdav.SINGLE_REPOSITORY_RESOLVER_REPOSITORY_NAME</param-name>
         <param-value>irodsRepo</param-value>
     </context-param>
@@ -107,7 +107,7 @@
       <context-param>
     <param-name>org.modeshape.web.jcr.webdav.SINGLE_REPOSITORY_RESOLVER_WORKSPACE_NAME</param-name>
         <param-value>default</param-value>
-     </context-param>
+     </context-param>-->
         
 
     <!--
@@ -170,14 +170,14 @@
     <!--
          Any auth-method will work for ModeShape.  BASIC is used this example for simplicity.
       -->
-    <login-config>
+<!--    <login-config>
         <auth-method>BASIC</auth-method>
-    </login-config>
+    </login-config>-->
 
     <!--
          This must match the role-name in the auth-constraint above.
       -->
-    <security-role>
+<!--    <security-role>
         <role-name>connect</role-name>
-    </security-role>
+    </security-role>-->
 </web-app>

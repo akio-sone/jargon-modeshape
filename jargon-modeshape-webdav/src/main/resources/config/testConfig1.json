@@ -1,5 +1,6 @@
  {
     "name" : "irodsRepo",
+    "jndiName" : "",
     "workspaces" : {
         "predefined" : ["otherWorkspace"],
         "default" : "default",
@@ -22,22 +23,26 @@
     },
     "externalSources" : {
         "irods" : {
+             "irodsHost":"",
+            "irodsPort":1247,
+            "irodsZone":"",
+            "irodsDefaultResource":"demoResc",
+            "irodsUser":"",
+            "irodsPassword":"",
+            "irodsAuthType":"STANDARD",
             "classname" : "org.irods.jargon.modeshape.connector.IRODSWriteableConnector",
-            "directoryPath" : "/dfc1/home/test1",
+            "directoryPath" : "/    /home/    ",
             "projections" : [
                 "default:/irodsGrid => /"
             ],
+             "queryable" : false,
             "readOnly" : false,
             "addMimeTypeMixin" : false,
-             "cacheTtlSeconds" : 30,
+            "addAvus" : false,
+             "cacheTtlSeconds" : 640,
             "exclusionPattern" : ".+[.]tmp$"
         }
     } ,
-       "query" : {
-        "enabled" : false,
-        "rebuildUponStartup" : "never"
-         },
-    
     "node-types" : ["config/irods.cnd"]
          
 } 
